@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     border: none;
-   
 }
 
 .container {
     display: inline-grid;
     grid-template: repeat(5, 163px) / repeat(10, 144px);
-
 }
 
 
@@ -25,7 +23,6 @@
     width: 30px;
     height: 30px;
  padding:0px 10px;
- 
 }
 
 h3 {
@@ -38,7 +35,10 @@ h3 {
 .setting {
     margin-top: 60px;
 }
-
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
 
 /* Input */
 .upper {
@@ -64,7 +64,6 @@ h3 {
     gap: 10px;
     align-items: center;
     padding-left: 50px;
-
 }
 
 .welcome {
@@ -113,9 +112,12 @@ button {
     color: white;
     width: 100px;
     height: 30px;
-
+    cursor: pointer;
 }
-
+button:active{
+background-color: rgb(78, 170, 245);
+border: 0.3px solid rgb(0, 123, 255);
+}
 
 /* Section Cards */
 .cla {
@@ -147,21 +149,22 @@ button {
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(15, 1fr);
 }
-
+.card a{
+    text-decoration: none;
+    color: black;
+}
 .line {
     background-color: orange;
     border-radius: 40px;
     grid-row: 1 / 5;
     grid-column: 1 / 2;
     width: 10px;
-
 }
 
 .projects {
     margin-left: 10px;
     grid-row: 1 / 4;
     grid-column: 2 / 16;
-
 }
 
 .links {
@@ -174,7 +177,6 @@ button {
 .links img {
     width: 20px;
     height: 20px;
-
 }
 
 /* section 2 */
@@ -196,7 +198,6 @@ button {
     margin: 0px 70px;
     background-color: white;
     padding: 25px 30px;
-
 }
 
 hr {
@@ -204,10 +205,6 @@ hr {
     margin: 10px 0px;
 }
 
-h5,
-p {
-    padding-left: 5px;
-}
 
 .card3 {
     display: flex;
